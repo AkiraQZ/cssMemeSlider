@@ -1,0 +1,105 @@
+  body {
+    margin: 0 auto;
+  }
+
+  img {
+    box-sizing: border-box;
+  }
+
+  .meme_wrapper {
+    display: fkex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+
+  .container {
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  .meme-slider {
+    width: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+  }
+
+  input {
+    display: none;
+  }
+
+  .meme_wrapper {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    z-index: 0;
+  }
+
+  #rad1:checked ~ .carousel {
+    -webkit-transform: translateX(0px);
+  }
+
+  #rad2:checked ~ .carousel {
+    -webkit-transform: translateX(-450px);
+  }
+
+  #rad3:checked ~ .carousel {
+    -webkit-transform: translateX(-900px);
+  }
+
+  #rad4:checked ~ .carousel {
+    -webkit-transform: translateX(-1350px);
+  }
+
+  #rad5:checked ~ .carousel {
+    -webkit-transform: translateX(-1800px);
+  }
+
+  .slider {
+    width: 66%;
+    overflow: hidden;
+    position: relative;
+    height: 80vh;
+  }
+
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    -webkit-transition: -webkit-transform 1s;
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .dot {
+    opacity: .5;
+    float: left;
+    width: 10px;
+    height: 10px;
+    background: white;
+    margin: 3px;
+    border-radius: 50%;
+    -webkit-transition: opacity .5s;
+  }
+
+  .dot:hover {
+    opacity: 1;
+  }
+
+  .bottom-slider {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
