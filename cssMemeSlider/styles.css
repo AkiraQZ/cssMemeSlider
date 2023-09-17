@@ -91,6 +91,32 @@ body {
     transform: translateX(-127.3vw);
   }
 
+  /* Показываем активынй контрол */
+  #btn1:checked ~ .bottom-slider .nav .button1 .circle  {
+    background-color: #B4CDED;
+    opacity: 1;
+  }
+
+  #btn2:checked ~ .bottom-slider .nav .button2 .circle  {
+    background-color: #B4CDED;
+    opacity: 1;
+  }
+
+  #btn3:checked ~ .bottom-slider .nav .button3 .circle  {
+    background-color: #B4CDED;
+    opacity: 1;
+  }
+
+  #btn4:checked ~ .bottom-slider .nav .button4 .circle  {
+    background-color: #B4CDED;
+    opacity: 1;
+  }
+
+  #btn5:checked ~ .bottom-slider .nav .button5 .circle  {
+    background-color: #B4CDED;
+    opacity: 1;
+  }
+
 
 
   .slider {
@@ -129,11 +155,13 @@ body {
 
   label {
     cursor: pointer;
+    height: fit-content;
   }
 
   .nav {
     display: flex;
     flex-direction: row;
+    height: fit-content;
   }
 
   @media screen and (max-width:500px) {
@@ -150,10 +178,18 @@ body {
     width: 1.2vw;
     height: 1.2vw;
     background: white;
+    border: 0.2vw solid white; ;
     margin: 0.45vw;
     border-radius: 50%;
     transition: opacity .5s;
   }
+
+  @media screen and (max-width:500px) {
+    .circle {
+        height: 2vw;
+        width: 2vw;
+    }
+}
 
   .circle:hover {
     opacity: 1;
