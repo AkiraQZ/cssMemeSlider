@@ -1,5 +1,10 @@
+html{
+  background-color: #0D1821;
+}
+
 body {
     margin: 0 auto;
+    padding: 1.5%;
   }
 
   img {
@@ -14,20 +19,20 @@ body {
 } */
 
   .container {
-    max-width: 1440px;
     margin: 0 auto;
     overflow-x: hidden;
     display: flex;
     justify-content: center;
-    padding: 15px;
+    padding: 2%;
   }
 
   .meme-slider {
     width: 100%;
-    background-color: green;
+    background-color: #B4CDED;
     display: flex;
     justify-content: center;
     padding: 2%;
+    border-radius: 3vw;
   }
 
   input {
@@ -40,8 +45,11 @@ body {
     justify-content: center;
   }
 
+
+
+
   /* Крутим мемы B-) */
-  #btn1:checked ~ .carousel {
+  #btn1:checked ~.carousel {
     transform: translateX(0vw);
   }
 
@@ -49,37 +57,38 @@ body {
     transform: translateX(-88vw);
   }
 
-  #btn3:checked ~ .carousel {
+  #btn3:checked ~.carousel {
     transform: translateX(-175.8vw);
   }
 
-  #btn4:checked ~ .carousel {
+  #btn4:checked ~.carousel {
     transform: translateX(-263.5vw);
   }
 
-  #btn5:checked ~ .carousel {
-    transform: translateX(-351vw);
+  #btn5:checked ~.carousel {
+    transform: translateX(-351.1vw);
   }
 
-  /* Крутим текст B-) */
-  #btn1:checked ~ .text_carousel {
-    transform: translateX(0px);
+
+  /* Крутим текст */
+  #btn1:checked ~ .bottom-slider .text_carousel {
+    transform: translateX(0vw);
   }
 
-  #btn2:checked ~ .text_carousel {
-    transform: translateX(-100px);
+  #btn2:checked ~ .bottom-slider .text_carousel {
+    transform: translateX(-31vw);
   }
 
-  #btn3:checked ~ .text_carousel {
-    transform: translateX(-900px);
+  #btn3:checked ~ .bottom-slider .text_carousel {
+    transform: translateX(-68vw);
   }
 
-  #btn4:checked ~ .text_carousel {
-    transform: translateX(-1350px);
+  #btn4:checked ~ .bottom-slider .text_carousel {
+    transform: translateX(-92vw);
   }
 
-  #btn5:checked ~ .text_carousel {
-    transform: translateX(-1800px);
+  #btn5:checked ~ .bottom-slider .text_carousel {
+    transform: translateX(-127.3vw);
   }
 
 
@@ -102,13 +111,15 @@ body {
   }
 
   .text_carousel_wrapper {
-    width: 7.4vw;
+    width: 23.4vw;
+    height: 7vh;
     overflow: hidden;
   }
 
   .text_carousel {
     display: flex;
     flex-direction: row;
+    gap:15vw;
     transition: transform 1s;
   }
 
@@ -131,25 +142,33 @@ body {
     }
 }
 
-  .dot {
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: .5;
-    width: 10px;
-    height: 10px;
+    width: 1.2vw;
+    height: 1.2vw;
     background: white;
-    margin: 3px;
+    margin: 0.45vw;
     border-radius: 50%;
     transition: opacity .5s;
   }
 
-  .dot:hover {
+  .circle:hover {
     opacity: 1;
   }
 
   .bottom-slider {
-    margin-top: 5px;
+    margin-top: 2vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+
+  .text_carousel_text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3vw;
   }
 
   @media screen and (max-width:500px) {
