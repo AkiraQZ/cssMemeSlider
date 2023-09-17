@@ -178,7 +178,7 @@ body {
     width: 1.2vw;
     height: 1.2vw;
     background: white;
-    border: 0.2vw solid white; ;
+    border: 0.2vw solid rgba(255, 255, 255, 0.5); ;
     margin: 0.45vw;
     border-radius: 50%;
     transition: opacity .5s;
@@ -193,6 +193,7 @@ body {
 
   .circle:hover {
     opacity: 1;
+    border-color: rgba(255, 255, 255, 1);
   }
 
   .bottom-slider {
