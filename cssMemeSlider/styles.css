@@ -1,0 +1,214 @@
+html{
+  background-color: #0D1821;
+}
+
+body {
+    margin: 0 auto;
+    padding: 1.5%;
+  }
+
+  img {
+    box-sizing: border-box;
+    height:39vw;
+  }
+/*
+ @media screen and (max-width:500px) {
+  img {
+    scale: 0.98;
+}
+} */
+
+  .container {
+    margin: 0 auto;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+  }
+
+  .meme-slider {
+    width: 100%;
+    background-color: #B4CDED;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    border-radius: 3vw;
+  }
+
+  input {
+    display: none;
+  }
+
+  .meme_wrapper {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+
+  /* Крутим мемы B-) */
+  #btn1:checked ~.carousel {
+    transform: translateX(0vw);
+  }
+
+  #btn2:checked ~ .carousel {
+    transform: translateX(-88vw);
+  }
+
+  #btn3:checked ~.carousel {
+    transform: translateX(-175.8vw);
+  }
+
+  #btn4:checked ~.carousel {
+    transform: translateX(-263.5vw);
+  }
+
+  #btn5:checked ~.carousel {
+    transform: translateX(-351.1vw);
+  }
+
+
+  /* Крутим текст */
+  #btn1:checked ~ .bottom-slider .text_carousel {
+    transform: translateX(0vw);
+  }
+
+  #btn2:checked ~ .bottom-slider .text_carousel {
+    transform: translateX(-31vw);
+  }
+
+  #btn3:checked ~ .bottom-slider .text_carousel {
+    transform: translateX(-68vw);
+  }
+
+  #btn4:checked ~ .bottom-slider .text_carousel {
+    transform: translateX(-92vw);
+  }
+
+  #btn5:checked ~ .bottom-slider .text_carousel {
+    transform: translateX(-127.3vw);
+  }
+
+  /* Показываем активынй контрол */
+  #btn1:checked ~ .bottom-slider .nav .button1 .circle  {
+    background-color: #B4CDED;
+    opacity: 1;
+  }
+
+  #btn2:checked ~ .bottom-slider .nav .button2 .circle  {
+    background-color: #B4CDED;
+    opacity: 1;
+  }
+
+  #btn3:checked ~ .bottom-slider .nav .button3 .circle  {
+    background-color: #B4CDED;
+    opacity: 1;
+  }
+
+  #btn4:checked ~ .bottom-slider .nav .button4 .circle  {
+    background-color: #B4CDED;
+    opacity: 1;
+  }
+
+  #btn5:checked ~ .bottom-slider .nav .button5 .circle  {
+    background-color: #B4CDED;
+    opacity: 1;
+  }
+
+
+
+  .slider {
+    width: 90%;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width:500px) {
+    .slider {
+        width: 93.1%
+    }
+}
+
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    transition: transform 1s;
+  }
+
+  .text_carousel_wrapper {
+    width: 23.4vw;
+    height: 7vh;
+    overflow: hidden;
+  }
+
+  .text_carousel {
+    display: flex;
+    flex-direction: row;
+    gap:15vw;
+    transition: transform 1s;
+  }
+
+  .text_carousel_text {
+    white-space: nowrap;
+  }
+
+  label {
+    cursor: pointer;
+    height: fit-content;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+  }
+
+  @media screen and (max-width:500px) {
+    .nav {
+        justify-content: center;
+    }
+}
+
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: .5;
+    width: 1.2vw;
+    height: 1.2vw;
+    background: white;
+    border: 0.2vw solid white; ;
+    margin: 0.45vw;
+    border-radius: 50%;
+    transition: opacity .5s;
+  }
+
+  @media screen and (max-width:500px) {
+    .circle {
+        height: 2vw;
+        width: 2vw;
+    }
+}
+
+  .circle:hover {
+    opacity: 1;
+  }
+
+  .bottom-slider {
+    margin-top: 2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .text_carousel_text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3vw;
+  }
+
+  @media screen and (max-width:500px) {
+    .bottom-slider {
+        flex-direction: column-reverse;
+    }
+}
