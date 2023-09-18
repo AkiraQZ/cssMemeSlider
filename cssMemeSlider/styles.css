@@ -124,7 +124,7 @@ body {
     overflow: hidden;
   }
 
-  @media screen and (max-width:500px) {
+  @media screen and (max-width:768px) {
     .slider {
         width: 93.1%
     }
@@ -164,7 +164,8 @@ body {
     height: fit-content;
   }
 
-  @media screen and (max-width:500px) {
+
+  @media screen and (max-width:768px) {
     .nav {
         justify-content: center;
     }
@@ -184,12 +185,13 @@ body {
     transition: opacity .5s;
   }
 
-  @media screen and (max-width:500px) {
+  @media screen and (max-width:768px) {
     .circle {
         height: 2vw;
         width: 2vw;
     }
 }
+
   /* Красим кнопки по ховеру на бокс вокруг них */
   .button1:hover > .circle{
     opacity: 1;
@@ -228,7 +230,7 @@ body {
     font-size: 3vw;
   }
 
-  @media screen and (max-width:500px) {
+  @media screen and (max-width:768px) {
     .bottom-slider {
         flex-direction: column-reverse;
     }
