@@ -190,8 +190,28 @@ body {
         width: 2vw;
     }
 }
+  /* Красим кнопки по ховеру на бокс вокруг них */
+  .button1:hover > .circle{
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 1);
+  }
 
-  .circle:hover {
+  .button2:hover > .circle{
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 1);
+  }
+
+  .button3:hover > .circle{
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 1);
+  }
+
+  .button4:hover > .circle{
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 1);
+  }
+
+  .button5:hover > .circle{
     opacity: 1;
     border-color: rgba(255, 255, 255, 1);
   }
