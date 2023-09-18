@@ -164,6 +164,7 @@ body {
     height: fit-content;
   }
 
+
   @media screen and (max-width:768px) {
     .nav {
         justify-content: center;
@@ -178,7 +179,7 @@ body {
     width: 1.2vw;
     height: 1.2vw;
     background: white;
-    border: 0.2vw solid white; ;
+    border: 0.2vw solid rgba(255, 255, 255, 0.5); ;
     margin: 0.45vw;
     border-radius: 50%;
     transition: opacity .5s;
@@ -191,8 +192,30 @@ body {
     }
 }
 
-  .circle:hover {
+  /* Красим кнопки по ховеру на бокс вокруг них */
+  .button1:hover > .circle{
     opacity: 1;
+    border-color: rgba(255, 255, 255, 1);
+  }
+
+  .button2:hover > .circle{
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 1);
+  }
+
+  .button3:hover > .circle{
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 1);
+  }
+
+  .button4:hover > .circle{
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 1);
+  }
+
+  .button5:hover > .circle{
+    opacity: 1;
+    border-color: rgba(255, 255, 255, 1);
   }
 
   .bottom-slider {
